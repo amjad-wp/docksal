@@ -3839,6 +3839,7 @@ install_tools_alpine ()
 # Install Alpine dependencies
 install_tools_generic_linux ()
 {
+        echo "Generic Linux"
 	# Require Docker
 	if ! is_docker_version || ! is_docker_server_version; then
 		echo-error "Docker version should be ${REQUIREMENTS_DOCKER} or greater." \
